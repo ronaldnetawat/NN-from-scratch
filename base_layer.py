@@ -1,5 +1,5 @@
 # Writing the Base Layer class
-class Layer:
+class BaseLayer:
     def __init__(self) -> None:
         self.input = None
         self.output = None
