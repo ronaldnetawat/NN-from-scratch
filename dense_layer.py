@@ -1,7 +1,7 @@
-from base_layer import Layer
+from base_layer import BaseLayer
 import numpy as np
 
-class Dense(Layer):
+class DenseLayer(BaseLayer):
     def __init__(self, input_size, output_size) -> None: # ISSUE
         super().__init__() # ISSUE
         # Initialize W with random values from a Normal Gaussian Distribution
@@ -18,6 +18,8 @@ class Dense(Layer):
         # Update the parameters and return input grad
         # Found by evaluating gradients for each trainable parameter and inputs
         weights_gradient = np.dot(output_gradient, self.input.T)
+        # Update the parameters using Gradient Descent
         self.weights -= weights_gradient * learning_rate
         self.bias -= output_gradient * learning_rate
+        # Return the input gradient by carrying matmul
         return np.dot(self.weights.T, output_gradient)
