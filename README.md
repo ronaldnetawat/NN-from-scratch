@@ -1,1 +1,1 @@
-# Building a Neural Network library from Scratch in Python
+# A Neural Network library from Scratch in Python
