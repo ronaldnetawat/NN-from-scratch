@@ -2,8 +2,7 @@ from base_layer import BaseLayer
 import numpy as np
 
 class ActivationLayer(BaseLayer):
-    def __init__(self, activation, d_activation) -> None:
-        super().__init__()
+    def __init__(self, activation, d_activation):
         self.activation = activation # Activation func
         self.d_activation = d_activation # 1st derivative
 
