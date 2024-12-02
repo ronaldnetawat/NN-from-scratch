@@ -4,7 +4,7 @@
 
 from dense_layer import DenseLayer
 from activation_functions import Tanh
-from loss_function import mse, d_mse
+from loss_functions import mse, d_mse
 import numpy as np
 
 X = np.reshape([[0,0], [0,1], [1,0], [1,1]], (4,2,1))
