@@ -1,6 +1,6 @@
 # Writing the Base Layer class
 class BaseLayer:
-    def __init__(self) -> None:
+    def __init__(self):
         self.input = None
         self.output = None
 
