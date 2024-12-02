@@ -2,8 +2,7 @@ from base_layer import BaseLayer
 import numpy as np
 
 class DenseLayer(BaseLayer):
-    def __init__(self, input_size, output_size) -> None: # ISSUE
-        super().__init__() # ISSUE
+    def __init__(self, input_size, output_size): # ISSUE
         # Initialize W with random values from a Normal Gaussian Distribution
         self.weights = np.random.randn(output_size, input_size)
         # Initialize B the same way
